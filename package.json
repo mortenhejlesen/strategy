@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "node server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "vercel-build": "echo Static site with serverless API - no build step required"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
