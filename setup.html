@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clariy Insights AI - Setup</title>
+    <link rel="stylesheet" href="assets/site.css">
+  </head>
+  <body data-page="setup.html">
+    <div class="page-grid"></div>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="index.html">
+          <div class="brand-mark">O</div>
+          <div><div class="brand-title">Clariy Insights AI</div><div class="brand-subtitle">AI strategy operating system</div></div>
+        </a>
+        <nav class="top-nav" data-top-nav></nav>
+        <div class="header-actions">
+          <button class="theme-toggle" data-theme-toggle type="button">Toggle theme</button>
+          <a class="button primary" href="workspace.html">Launch workspace</a>
+        </div>
+      </div>
+    </header>
+    <main class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Start a new engagement</div>
+          <h1 class="page-title">Frame the mandate like a top-tier strategy team would.</h1>
+          <p class="section-copy">Define the company, strategic question, and analysis mode. Clariy will generate workstreams, issue trees, evidence logic, and a board-grade workspace.</p>
+        </div>
+        <div class="split-grid" style="margin-top:28px;">
+          <section class="panel" data-reveal>
+            <div class="identity-stage">
+              <div class="kicker">Company identification</div>
+              <div class="command-title" style="margin-top:10px;">Resolve the correct entity before analysis begins.</div>
+              <div class="input-shell" style="margin-top:18px;">
+                <input id="company-search-input" class="field command-input" placeholder="Search any company, business unit, or operating brand">
+                <button class="button secondary" id="company-search-button" type="button">Search</button>
+              </div>
+              <div class="identity-banner" data-selected-company-banner>
+                <div>
+                  <div class="metric-label">No company selected yet</div>
+                  <div class="muted">Search and choose the right entity to lock the analysis scope.</div>
+                </div>
+                <div class="badge warning">Awaiting identification</div>
+              </div>
+              <div class="results-grid" data-company-results></div>
+            </div>
+            <div class="form-grid" style="margin-top:26px;">
+              <label><div class="metric-label">Geography</div><input id="setup-geography" class="field" value="Europe and North America"></label>
+              <label><div class="metric-label">Industry</div><input id="setup-industry" class="field" value="Industrial technology"></label>
+              <label><div class="metric-label">Business unit</div><input id="setup-business-unit" class="field" value="Enterprise-wide"></label>
+              <label><div class="metric-label">Strategic horizon</div><input id="setup-horizon" class="field" value="3 years"></label>
+            </div>
+            <div style="margin-top:18px;">
+              <div class="metric-label">Strategic thesis or key question</div>
+              <textarea id="setup-question" class="textarea">How should the company accelerate profitable growth while defending premium positioning against AI-native competitors?</textarea>
+            </div>
+            <div style="margin-top:28px;">
+              <div class="metric-label">Analysis depth</div>
+              <div class="three-col" style="margin-top:12px;">
+                <button class="depth-card" data-depth-card data-depth="light" type="button">
+                  <div style="display:flex;justify-content:space-between;gap:12px;"><strong>Light</strong><span class="badge">2-4 minutes</span></div>
+                  <p class="muted">Executive scan with snapshot, risks, opportunities, and a 5-slide storyline.</p>
+                </button>
+                <button class="depth-card" data-depth-card data-depth="medium" type="button">
+                  <div style="display:flex;justify-content:space-between;gap:12px;"><strong>Medium</strong><span class="badge">6-10 minutes</span></div>
+                  <p class="muted">Consulting-style diagnostic with industry structure, benchmarking, SWOT, and recommendations.</p>
+                </button>
+                <button class="depth-card active" data-depth-card data-depth="heavy" type="button">
+                  <div style="display:flex;justify-content:space-between;gap:12px;"><strong>Heavy</strong><span class="badge">12-18 minutes</span></div>
+                  <p class="muted">Full workup with 3C, Five Forces, capability heatmap, scenarios, roadmap, and board pack.</p>
+                </button>
+              </div>
+            </div>
+            <div style="margin-top:28px;">
+              <div class="metric-label">Decision lens</div>
+              <div class="mode-row" style="margin-top:12px;">
+                <button class="mode-chip active" data-mode-chip data-mode="board" type="button">Board mode</button>
+                <button class="mode-chip" data-mode-chip data-mode="pe" type="button">PE mode</button>
+                <button class="mode-chip" data-mode-chip data-mode="transformation" type="button">Transformation mode</button>
+              </div>
+            </div>
+            <div class="button-row">
+              <button class="button primary" id="start-analysis-button" type="button">Start analysis</button>
+              <a class="button secondary" href="executive-summary.html">Preview storyline</a>
+            </div>
+          </section>
+          <div class="stack">
+            <section class="panel" data-reveal>
+              <div class="kicker" style="color:var(--accent);">Auto-generated workstreams</div>
+              <div class="stack" style="margin-top:18px;">
+                <div class="line-item">Market attractiveness and structural profit pools</div>
+                <div class="line-item">Competitive position and benchmark economics</div>
+                <div class="line-item">Customer economics, segment priorities, and pricing logic</div>
+                <div class="line-item">Operating model and AI-enabled value creation</div>
+                <div class="line-item">Strategic choices, risk register, and implementation sequencing</div>
+              </div>
+            </section>
+            <section class="panel" data-reveal>
+              <div class="kicker">What heavy depth unlocks</div>
+              <div class="stack" style="margin-top:18px;">
+                <div class="line-item">Board-mode synthesis, CEO memo, and investor lens</div>
+                <div class="line-item">Strategic option simulator across growth, margin, complexity, and risk</div>
+                <div class="line-item">Capability heatmap and AI disruption exposure radar</div>
+                <div class="line-item">Consultant-grade issue tree and storyline generator</div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/runtime.js"></script>
+  </body>
+</html>
